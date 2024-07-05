@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #782282;
+    height: 100vh;
+}
+
+
+
+header, footer{
+    padding: 20px;
+    background-color: #02111B;
+    color: #008DD5;
+    box-shadow: 0 0 10px 10px rgb(00, 00, 00, .2);
+    text-align: center;
+}
+header{
+    display: flex;
+    flex-flow: column nowrap;
+}
+header nav{
+    display: flex;
+    align-self: center;
+    margin-top: 10px;
+}
+header nav a{
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    margin: 0 7.5px;
+}
+header nav a:hover{
+    text-decoration: underline;
+    border: solid 1px white;
+    border-radius: 5px;
+    background-color: #008DD5;
+    transition: all .5s;
+}
+
+
+
+main{
+    background-color: #DFBBB1;
+    padding: 10px;
+    width: 90vw;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px 10px #00000033;
+}
+main p{
+    margin: 10px 0;
+    line-height: 1.5em;
+}
+main img{
+    display: block;
+    margin: auto;
+    width: 95%;
+    max-width: 500px;
+    border: solid 5px white;
+}
+.produto{
+    display: flex;
+    padding: 5px;
+    margin: 20px 0;
+    border-radius: 5px;
+    background-color: #008DD5;
+}
+.produto > *{
+    flex: auto;
+    margin: 0 5px;
+}
+.produto img{
+    max-width: 75px;
+    flex: 0 0 50px;
+}
+.produto h3{
+    align-self: center;
+}
+
+
+
+footer{
+    width: 100% /* calc(100vw - 15px) */;
+    padding: 10px 0;
+}
