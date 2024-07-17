@@ -1,1 +1,27 @@
 @charset "UTF-8";
+
+@media screen and (max-width: 768px) {
+    .produtos{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    .produto{
+        flex-flow: column nowrap;
+        width: fit-content;
+        margin: 10px;
+    }
+    .produto > p{
+        display: none;
+    } 
+}
+
+@media screen and (min-width: 768px){
+    #img-fachada{
+        background-image: url('../midia/img-fachada3-large.jpg');
+        background-size: cover;
+        max-width: 1000px;
+        height: 400px;
+        box-shadow: inset 0 10px 10px rgba(00, 00, 00, .5);
+    }
+}

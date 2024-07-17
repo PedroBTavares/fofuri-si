@@ -6,7 +6,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    background-color: #782282;
+    background-color: #DFBBB1;
     height: 100vh;
 }
 
@@ -16,12 +16,12 @@ header, footer{
     padding: 20px;
     background-color: #02111B;
     color: #008DD5;
-    box-shadow: 0 0 10px 10px rgb(00, 00, 00, .2);
     text-align: center;
 }
 header{
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 header nav{
     display: flex;
@@ -33,10 +33,10 @@ header nav a{
     color: white;
     text-decoration: none;
     margin: 0 7.5px;
+    border: solid 1px white;
 }
 header nav a:hover{
     text-decoration: underline;
-    border: solid 1px white;
     border-radius: 5px;
     background-color: #008DD5;
     transition: all .5s;
@@ -44,14 +44,20 @@ header nav a:hover{
 
 
 
+#img-fachada{
+    margin: auto;
+    background: url('../midia/img-fachada3.jpg') center no-repeat;
+    background-size: contain;
+    height: 300px;
+}
 main{
     background-color: #DFBBB1;
-    padding: 10px;
-    width: 90vw;
-    max-width: 800px;
     margin: auto;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px 10px #00000033;
+    padding: 10px;
+    max-width: 800px;
+}
+main h2{
+    margin: 25px 0;
 }
 main p{
     margin: 10px 0;
@@ -69,7 +75,8 @@ main img{
     padding: 5px;
     margin: 20px 0;
     border-radius: 5px;
-    background-color: #008DD5;
+    background-color: #008ed581;
+    border: solid 5px #008DD5;
 }
 .produto > *{
     flex: auto;
@@ -81,6 +88,7 @@ main img{
 }
 .produto h3{
     align-self: center;
+    text-align: center;
 }
 
 
